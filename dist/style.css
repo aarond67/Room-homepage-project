@@ -15,6 +15,7 @@ body {
   font-family: 'Spartan', sans-serif;
   font-weight: 500;
   height: 100%;
+  font-size: 12px;
 }
 
 .container {
@@ -121,5 +122,193 @@ button::before, .button::before {
   opacity: 0;
   -webkit-transition: opacity 150ms ease-in-out;
   transition: opacity 150ms ease-in-out;
+}
+
+button:hover::before, .button:hover::before {
+  opacity: 1;
+}
+
+.has-fade {
+  visibility: hidden;
+}
+
+.fade-in {
+  -webkit-animation: fade-in 200ms ease-in-out forwards;
+          animation: fade-in 200ms ease-in-out forwards;
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  -webkit-animation: fade-out 200ms ease-in-out forwards;
+          animation: fade-out 200ms ease-in-out forwards;
+}
+
+.header.open .header__toggle > span:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.header.open .header__toggle > span:nth-child(2) {
+  opacity: 0;
+}
+
+.header.open .header__toggle > span:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.header .overlay {
+  opacity: 0;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.header__background {
+  width: 52.5rem;
+  height: 33.4375rem;
+  background-position: top center;
+  background-image: url("/images/desktop-image-hero-1.jpg");
+  background-size: 100%;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.header nav {
+  z-index: 2;
+  position: relative;
+  background-color: white;
+}
+
+.header__logo img {
+  background-position: center;
+  height: 0.9375rem;
+}
+
+.header__toggle > span {
+  display: block;
+  width: 1.625rem;
+  height: 0.125rem;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  -webkit-transform-origin: 0.1875rem 0.0625rem;
+          transform-origin: 0.1875rem 0.0625rem;
+}
+
+.header__toggle > span:not(:last-child) {
+  margin-bottom: 0.3125rem;
+}
+
+.header__menu {
+  position: absolute;
+  z-index: 1;
+  width: calc(100% - 3rem);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: white;
+  margin-top: 1.5rem;
+  padding: 1.625rem;
+  border-radius: 0.3125rem;
+}
+
+.header__menu a {
+  display: block;
+  padding: 0.625rem;
+  text-align: center;
+}
+
+.header__links a {
+  font-size: 12px;
+  position: relative;
+  -webkit-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+}
+
+.header__links a:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.header__links a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+}
+
+.header__links a:hover::before {
+  opacity: 1;
+}
+
+.holder {
+  padding-top: 4rem;
+  padding-left: 4.0625rem;
+  padding-right: 25rem;
 }
 /*# sourceMappingURL=style.css.map */
