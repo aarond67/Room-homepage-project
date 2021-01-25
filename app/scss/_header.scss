@@ -1,7 +1,7 @@
 
 .header {
   
-    
+    position: relative;
     //Hamburger Open Styles
    
         &.open{
@@ -33,7 +33,7 @@
         }	
         &__background{
             width: 52.5rem;
-            height: 33.4375rem;
+            height: 33.375rem;
             background-position:top center;
             background-image:url("/images/desktop-image-hero-1.jpg");
             background-size: 100%;
@@ -115,11 +115,11 @@
                     content: "";
                     display: block;
                     position: absolute;
-                   
+                    height: 5px;
                     left: 0;
                     right: 0;
-                    
-                    
+                    bottom: -12px;
+                    background: $white;
                     opacity: 0;
                     transition: opacity 300ms ease-in-out;
                 }
@@ -150,7 +150,6 @@
         margin-top: 7.625rem;
        max-width: 26rem;
         margin-left: 6.25rem;
-        
     }
 
     p{
@@ -160,6 +159,7 @@
     }
 
     .arrow{
+        margin-left: 34px;
         padding:0;
         border: none;
         border-radius: 0;
@@ -186,31 +186,50 @@
 			color: $black;
 			transition: color 300ms ease-in-out;
             letter-spacing:10px;
-			&::before {
-				content: "";
-				display: block;
-				position: absolute;
-				height: 5px;
-				left: 0;
-				right: 0;
-				bottom: -30px;
-				
-				opacity: 0;
-				transition: opacity 300ms ease-in-out;
-			}
+			
 
 
 			&:hover{
 				color:$darkGray;
 
 				> button:first-child{
-                    opacity: 0.4;
+                    opacity: 0.3;
                 }
 			}
         
         }
         
 
+    }
+    .arrows{
+        margin-top: 5.55rem;
+    }
+
+    .arrow-left{
+        position: relative;
+        padding: 0;
+        border: none;
+        border-radius: 0;
+        height: 80px;
+        width: 80px;
+        background-color: $black;
+        background-image: url('/images/icon-angle-left.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    .arrow-right{
+        position: absolute;
+        padding: 0;
+        border: none;
+        border-radius: 0;
+        height: 80px;
+        width: 80px;
+        background-color: $black;
+        background-image: url('/images/icon-angle-right.svg');
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     

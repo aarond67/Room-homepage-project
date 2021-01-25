@@ -206,6 +206,10 @@ button:hover::before, .button:hover::before {
           animation: fade-out 200ms ease-in-out forwards;
 }
 
+.header {
+  position: relative;
+}
+
 .header.open .header__toggle > span:first-child {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -232,7 +236,7 @@ button:hover::before, .button:hover::before {
 
 .header__background {
   width: 52.5rem;
-  height: 33.4375rem;
+  height: 33.375rem;
   background-position: top center;
   background-image: url("/images/desktop-image-hero-1.jpg");
   background-size: 100%;
@@ -300,8 +304,11 @@ button:hover::before, .button:hover::before {
   content: "";
   display: block;
   position: absolute;
+  height: 5px;
   left: 0;
   right: 0;
+  bottom: -12px;
+  background: white;
   opacity: 0;
   -webkit-transition: opacity 300ms ease-in-out;
   transition: opacity 300ms ease-in-out;
@@ -335,6 +342,7 @@ p {
 }
 
 .arrow {
+  margin-left: 34px;
   padding: 0;
   border: none;
   border-radius: 0;
@@ -359,24 +367,48 @@ p {
   letter-spacing: 10px;
 }
 
-.shop a::before {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 5px;
-  left: 0;
-  right: 0;
-  bottom: -30px;
-  opacity: 0;
-  -webkit-transition: opacity 300ms ease-in-out;
-  transition: opacity 300ms ease-in-out;
-}
-
 .shop a:hover {
   color: #a1a1a1;
 }
 
 .shop a:hover > button:first-child {
-  opacity: 0.4;
+  opacity: 0.3;
+}
+
+.arrows {
+  margin-top: 5.55rem;
+}
+
+.arrow-left {
+  position: relative;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  height: 80px;
+  width: 80px;
+  background-color: black;
+  background-image: url("/images/icon-angle-left.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.arrow-right {
+  position: absolute;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  height: 80px;
+  width: 80px;
+  background-color: black;
+  background-image: url("/images/icon-angle-right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer__middle {
+  width: 36.375rem;
+  height: 23.09375rem;
+  margin-top: 4.5625rem;
+  margin-left: 3.0625rem;
 }
 /*# sourceMappingURL=style.css.map */
