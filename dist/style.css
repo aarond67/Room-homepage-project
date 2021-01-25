@@ -98,6 +98,10 @@ body {
           align-items: center;
 }
 
+a, a:visited, a:hover {
+  text-decoration: none;
+}
+
 button, .button {
   position: relative;
   display: inline-block;
@@ -283,6 +287,7 @@ button:hover::before, .button:hover::before {
 .header__links a {
   font-size: 12px;
   position: relative;
+  color: white;
   -webkit-transition: color 300ms ease-in-out;
   transition: color 300ms ease-in-out;
 }
@@ -306,9 +311,72 @@ button:hover::before, .button:hover::before {
   opacity: 1;
 }
 
-.holder {
+.holder1 {
   padding-top: 4rem;
   padding-left: 4.0625rem;
   padding-right: 25rem;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.holder2 {
+  margin-top: 7.625rem;
+  max-width: 26rem;
+  margin-left: 6.25rem;
+}
+
+p {
+  line-height: 22px;
+  font-size: 12px;
+  color: #a1a1a1;
+}
+
+.arrow {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  background-image: url("/images/icon-arrow.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 2.625rem;
+  height: 0.9375rem;
+}
+
+.arrow:hover {
+  opacity: 0.5;
+}
+
+.shop a {
+  position: relative;
+  font-size: 12px;
+  color: black;
+  -webkit-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+  letter-spacing: 10px;
+}
+
+.shop a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 5px;
+  left: 0;
+  right: 0;
+  bottom: -30px;
+  opacity: 0;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+}
+
+.shop a:hover {
+  color: #a1a1a1;
+}
+
+.shop a:hover > button:first-child {
+  opacity: 0.4;
 }
 /*# sourceMappingURL=style.css.map */

@@ -91,6 +91,10 @@ body{
     }
 }
 
+a,a:visited, a:hover{
+    text-decoration: none;
+}
+
 //Buttons
 button, .button{
     position: relative;
