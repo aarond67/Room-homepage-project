@@ -1,8 +1,26 @@
 .footer{
+    &__side1{
+        width: 26.25rem;
+        height: 266px;
+        background-image: url('/images/image-about-dark.jpg');
+        background-size: 100% 266px;
+        background-repeat: no-repeat;
+    }
     &__middle{
-        width: 36.375rem;
-        height: 23.09375rem;
-        margin-top: 4.5625rem;
+        max-width: 32rem;
+       margin-top: 50px;
         margin-left: 3.0625rem;
+        h2{
+            letter-spacing:6px;
+        }
+       
+    }
+
+    &__side2{
+        width:27.5rem;
+        height: 266px;
+        background-image: url('/images/image-about-light.jpg');
+        background-size: 100% ;
+        background-repeat: no-repeat;
     }
 }
