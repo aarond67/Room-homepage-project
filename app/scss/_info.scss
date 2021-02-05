@@ -1,0 +1,156 @@
+.info{
+    position: relative;
+    &__arrows1{
+        position: absolute;
+        top: -3.5rem;
+        right:3.5rem;
+        z-index: 1;
+    }
+
+    &__arrow-left1{
+        position: relative;
+        background-color: $black;
+        background-image: url('/images/icon-angle-left.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 3.5rem;
+        width: 3.5rem;
+        border: none;
+        border-radius: 0;
+        padding:0;
+    }
+
+    &__arrow-right1{
+        position: absolute;
+        background-color: $black;
+        background-image: url('/images/icon-angle-right.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 3.5rem;
+        width: 3.5rem;
+        border: none;
+        border-radius: 0;
+        padding:0;
+    }
+
+    &__arrows2{
+        position: absolute;
+        bottom:0;
+        z-index: 1;
+        @include breakpoint-down(medium){
+            top: -5rem;
+            right:5rem;
+        }
+
+        
+    }
+
+    &__arrow-left2{
+        position: relative;
+        background-color: $black;
+        background-image: url('/images/icon-angle-left.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 5rem;
+        width: 5rem;
+        border: none;
+        border-radius: 0;
+        padding:0;
+    }
+
+    &__arrow-right2{
+        position: absolute;
+        background-color: $black;
+        background-image: url('/images/icon-angle-right.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 5rem;
+        width: 5rem;
+        border: none;
+        border-radius: 0;
+        padding:0;
+    }
+
+    &__holder1{
+        padding-top: 4.5625rem;
+        padding-left: 2.1875rem;
+        padding-right: 1.1875rem;
+        height: 25.625rem;
+        @include breakpoint-up(medium){
+            height: 20.625rem;
+        }
+        @include breakpoint-up(large){
+            padding-top: 7.5625rem;
+            padding-left: 6.25rem;
+            padding-right: 0.40rem;
+        }
+        @include breakpoint-up(xlarge){
+            padding-top: 7.5625rem;
+            padding-left: 6.25rem;
+            padding-right: 5.3rem;
+        }
+    }
+
+
+    h1{
+        margin: 0;
+        font-size: 1.7375rem;
+        @include breakpoint-up(large){
+            font-size:2.25rem;
+        }
+    }
+
+    p{
+        line-height: 1.25rem;
+        color:$darkGray;
+        margin-bottom: 3.75rem;
+        @include breakpoint-up(large){
+            margin-bottom: 2.5rem;
+        }
+    }
+
+
+    &__shop{
+      
+        a{
+            position: relative;
+            font-size: 12px;
+			color: $black;
+			transition: color 300ms ease-in-out;
+            letter-spacing:10px;
+			
+
+
+			&:hover{
+				color:$darkGray;
+
+				> button:first-child{
+                    opacity: 0.3;
+                }
+			}
+        
+        }
+        
+
+    }
+
+    &__arrow{
+        margin-left: 34px;
+        padding:0;
+        border: none;
+        border-radius: 0;
+        background-color: transparent;
+        background-image: url('/images/icon-arrow.svg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 2.625rem;
+        height: 0.9375rem;
+        &:hover{
+            
+
+            
+                opacity: 0.5;
+            
+        }
+    }
+}

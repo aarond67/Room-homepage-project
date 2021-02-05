@@ -146,3 +146,16 @@ button, .button{
         display:none;
     }
 }
+
+.hide-for-tablet{
+
+    @include breakpoint-up(medium){
+        display: none;
+    }
+}
+
+.open-for-tablet{
+    @include breakpoint-up(medium){
+        display:block;
+    }
+}

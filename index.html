@@ -17,9 +17,12 @@
   </style>
 </head>
 <body>
-  <header class="header">
+  
+  <header class="header topgrid">
+    
     <nav>
     <div class = "header__background">
+      <div class="overlay has-fade"></div>
       <div class="header__menu has-fade flex">
         <a id="btnHamburger1" href="#" class="header__toggle1 hide-for-desktop ">
           <span></span>
@@ -40,20 +43,81 @@
           <span></span>
         </a>
         
-        <div class="header__holder2 flex flex-jc-c">
+        <div class="header__holder2 flex flex-jc-c hide-for-desktop">
           <a href="/" class="header__logo">
           <img src="images/logo.svg" alt="room"/>
           </a>
         </div>
+
+        <div class="header__holder2 flex  hide-for-mobile">
+          <a href="/" class="header__logo">
+          <img src="images/logo.svg" alt="room"/>
+          </a>
+          <div class="header__links hide-for-mobile">
+            <a href="#">home</a>
+            <a href="#">shop</a>
+            <a href="#">about</a>
+            <a href="#">contact</a>
+          </div>
+        </div>
+       
         
       </div>
     </div>
     </nav>
-  </header>
+  
   <div class = "info">
-    <div class="info__arrows">
+    <div class="overlay has-fade"></div>
+    <div class="info__arrows1 hide-for-tablet">
+      <button class="info__arrow-left1" id = "left1">
 
+      </button>
+      <button class="info__arrow-right1" id = "right1">
+        
+      </button>
     </div>
+
+    <div class="info__arrows2 hide-for-mobile open-for-tablet">
+      <button class="info__arrow-left2" id = "left2">
+
+      </button>
+      <button class="info__arrow-right2" id = "right2">
+        
+      </button>
+    </div>
+    <div class = "info__holder1">
+    <h1>
+      Discover innovative ways to decorate
+    </h1>
+    <p>
+      We provide unmatched quality, comfort, and style for property owners across the country. 
+      Our experts combine form and function in bringing your vision to life. Create a room in your 
+      own style with our collection and make your property a reflection of you and what you love.
+    </p>
+    <div class = "info__shop">
+      <a href=""class=" flex flex-ai-c ">
+        SHOP NOW
+        <button href="" class = "info__arrow"></button>
+      </a>
+    </div>
+  </div>
+  </div>
+</header>
+  <div class = "footer bottomgrid">
+    <div class = "footer__dark"></div>
+    <div class = "footer__info">
+      <h2>
+        ABOUT OUR FURNITURE
+      </h2>
+
+      <p>
+        Our multifunctional collection blends design and function to suit your individual taste.
+        Make each room unique, or pick a cohesive theme that best express your interests and what
+        inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+        or anything in between. Product specialists are available to help you create your dream space.
+      </p>
+    </div>
+    <div class = "footer__light"></div>
   </div>
   
 
