@@ -439,3 +439,56 @@
 }
 
 
+.background0{
+    z-index: 0;
+        height: 22.5rem;
+        background-position:top center;
+        background-image:var(--bg1);
+        @include breakpoint-up(medium){
+            height: 26.5rem;
+            background-size: 100% 26.5rem;
+        }
+        @include breakpoint-up(large){
+            height: 33.375rem;
+            background-size: 100% 33.375rem;
+        }
+        background-size: 100% 22.5rem;
+        background-position: top left;
+        background-repeat: no-repeat;
+}
+
+.background1{
+    z-index: 0;
+        height: 22.5rem;
+        background-position:top center;
+        background-image:var(--bg2);
+        @include breakpoint-up(medium){
+            height: 26.5rem;
+            background-size: 100% 26.5rem;
+        }
+        @include breakpoint-up(large){
+            height: 33.375rem;
+            background-size: 100% 33.375rem;
+        }
+        background-size: 100% 22.5rem;
+        background-position: top left;
+        background-repeat: no-repeat;
+}
+
+.background2{
+    z-index: 0;
+        height: 22.5rem;
+        background-position:top center;
+        background-image:var(--bg3);
+        @include breakpoint-up(medium){
+            height: 26.5rem;
+            background-size: 100% 26.5rem;
+        }
+        @include breakpoint-up(large){
+            height: 33.375rem;
+            background-size: 100% 33.375rem;
+        }
+        background-size: 100% 22.5rem;
+        background-position: top left;
+        background-repeat: no-repeat;
+}

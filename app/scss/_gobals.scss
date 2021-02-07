@@ -159,3 +159,18 @@ button, .button{
         display:block;
     }
 }
+
+.height{
+    height: 100%;
+}
+
+.height-none{
+    height: 0;
+    visibility: hidden;
+    h1{
+        visibility: hidden;
+    }
+    p{
+        visibility: hidden;
+    }
+}

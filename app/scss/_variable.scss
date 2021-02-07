@@ -1,3 +1,14 @@
+:root{
+    --bg1: url('/images/mobile-image-hero-1.jpg');
+    --bg2: url('/images/mobile-image-hero-2.jpg');
+    --bg3: url('/images/mobile-image-hero-3.jpg');
+    @include breakpoint-up(medium){
+        --bg1: url('/images/desktop-image-hero-1.jpg');
+        --bg2: url('/images/desktop-image-hero-2.jpg');
+        --bg3: url('/images/desktop-image-hero-3.jpg');
+    }
+}
+
 //Text Sizes
 $font-xsm: 0.6875rem; //11px
 $font-sm: 0.875rem; // 14px
@@ -11,3 +22,4 @@ $black: hsl(0, 0%, 0%);
 $white: hsl(0, 0%, 100%);
 $veryDarkGray: hsl(0, 0%, 27%);
 $transblack: hsla(0, 0%, 0%, 0.4);
+
